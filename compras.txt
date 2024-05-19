@@ -1,0 +1,57 @@
+2024-05-16 09:20:07 - Usuario: oliver@alumnos.com - Total: $60
+    Producto: Nieve de pistacho - Precio: $21
+    Producto: Paleta de vainilla - Precio: $18
+    Producto: Paleta de maracuya - Precio: $21
+2024-05-16 09:39:55 - Usuario: oliver@alumnos.com - Total: $59
+    Producto: Paleta de Mango - Precio: $17
+    Producto: Nieve de pistacho - Precio: $21
+    Producto: Paleta de maracuya - Precio: $21
+2024-05-16 09:43:22 - Usuario: oliver@alumnos.com - Total: $58
+    Producto: Paleta de Mango - Precio: $17
+    Producto: Paleta de maracuya - Precio: $21
+    Producto: Agua de limon con chia - Precio: $20
+2024-05-16 09:48:56 - Usuario: oliver@alumnos.com - Total: $132
+    Producto: Paleta de Mango - Precio: $17
+    Producto: Paleta de Mango - Precio: $17
+    Producto: Paleta de Oreo - Precio: $18
+    Producto: Agua de limon con chia - Precio: $20
+    Producto: Paleta de maracuya - Precio: $21
+    Producto: Paleta de vainilla - Precio: $18
+    Producto: Nieve de pistacho - Precio: $21
+2024-05-16 09:49:51 - Usuario: oliver@alumnos.com - Total: $17
+    Producto: Paleta de Mango - Precio: $17
+2024-05-16 09:53:26 - Usuario: oliver@alumnos.com - Total: $76
+    Producto: Paleta de Mango - Precio: $17
+    Producto: Paleta de Oreo - Precio: $18
+    Producto: Agua de limon con chia - Precio: $20
+    Producto: Paleta de maracuya - Precio: $21
+2024-05-16 09:53:50 - Usuario: oliver@alumnos.com - Total: $41
+    Producto: Agua de limon con chia - Precio: $20
+    Producto: Nieve de pistacho - Precio: $21
+2024-05-16 10:02:09 - Usuario: oliverto24@gmail.com - Total: $132
+    Producto: Paleta de Mango - Precio: $17
+    Producto: Paleta de Oreo - Precio: $18
+    Producto: Paleta de Mango - Precio: $17
+    Producto: Paleta de vainilla - Precio: $18
+    Producto: Paleta de maracuya - Precio: $21
+    Producto: Agua de limon con chia - Precio: $20
+    Producto: Nieve de pistacho - Precio: $21
+2024-05-16 23:22:20 - Usuario: oliver@alumnos.com - Total: $21
+    Producto: Nieve de pistacho - Precio: $21
+2024-05-17 06:57:19 - Usuario: oliver@alumnos.com - Total: $132
+    Producto: Paleta de Mango - Precio: $17
+    Producto: Paleta de Mango - Precio: $17
+    Producto: Paleta de Oreo - Precio: $18
+    Producto: Agua de limon con chia - Precio: $20
+    Producto: Paleta de maracuya - Precio: $21
+    Producto: Paleta de vainilla - Precio: $18
+    Producto: Nieve de pistacho - Precio: $21
+2024-05-17 22:33:08 - Usuario: oliver@alumnos.com - Total: $58
+    Producto: Paleta de Mango - Precio: $17
+    Producto: Paleta de maracuya - Precio: $21
+    Producto: Agua de limon con chia - Precio: $20
+2024-05-17 22:45:09 - Usuario: oliver@alumnos.com - Total: $76
+    Producto: Paleta de Mango - Precio: $17
+    Producto: Paleta de maracuya - Precio: $21
+    Producto: Agua de limon con chia - Precio: $20
+    Producto: Paleta de vainilla - Precio: $18
