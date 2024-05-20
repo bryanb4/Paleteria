@@ -10,22 +10,35 @@
             margin: 0;
             padding: 0;
             background-color: #f7f7f7;
+            color: #333;
         }
         header {
             background-color: #ffcc00;
-            padding: 10px;
+            padding: 30px;
             text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #333;
         }
         nav {
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 10px;
+            padding: 20px 0;
         }
         nav a {
             color: #fff;
             text-decoration: none;
-            margin-right: 20px;
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            color: #ffcc00;
         }
         .admin-container {
             max-width: 1200px;
@@ -38,6 +51,7 @@
         .admin-container h2 {
             text-align: center;
             margin-bottom: 20px;
+            color: #333;
         }
         .admin-options {
             display: grid;
@@ -61,10 +75,28 @@
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 10px;
-            position: fixed;
+            padding: 30px;
+            position: relative;
             bottom: 0;
             width: 100%;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        }
+        footer p {
+            margin: 10px 0;
+        }
+        @media (max-width: 768px) {
+            .admin-container {
+                margin: 10px;
+                padding: 10px;
+            }
+            header h1 {
+                font-size: 2em;
+            }
+            nav a {
+                display: block;
+                margin: 10px 0;
+                font-size: 1.3em;
+            }
         }
     </style>
 </head>
@@ -74,12 +106,12 @@
     </header>
     <nav>
         <a href="inicio_admin.php">Inicio</a>
-        <a href="gestion_productos.php">Gestión de Productos</a>
-        <a href="gestion_pedidos.php">Gestión de Pedidos</a>
-        <a href="productos.php">Visualizar Productos</a>
-        <a href="ver_pedidos.php">Visualizar Pedidos</a>
+        <a href="gestion_productos.php">Gestión Productos</a>
+        <a href="gestion_pedidos.php">Gestión Pedidos</a>
+        <a href="productos.php">Ver Productos</a>
+        <a href="ver_pedidos.php">Ver Pedidos</a>
         <a href="registrar_empleado.php">Registrar Empleado</a> <!-- Nueva opción de registrar empleado -->
-        <a href="ver_mensajes.php">Ver los mensajes</a>
+        <a href="ver_mensajes.php">Ver mensajes</a>
         <a href="cerrar_sesion.php">Cerrar Sesión</a>
     </nav>
     <div class="admin-container">
@@ -111,7 +143,7 @@
         </div>
     </div>
     <footer>
-    <p>&copy; 2024 Paletería Don Jose | Dirección: Ayutla #5637, Guadalajara Jalisco Mexico | Teléfono: (332) 914 5027 </p>
+        <p>&copy; 2024 Paletería Don Jose | Dirección: Ayutla #5637, Guadalajara Jalisco Mexico | Teléfono: (332) 914 5027 </p>
     </footer>
 </body>
 </html>

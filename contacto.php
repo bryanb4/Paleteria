@@ -29,11 +29,22 @@ if (isset($_SESSION['nueva_compra'])) {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-image: url('../images/bg7.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #333;
         }
         header {
             background-color: #ffcc00;
-            padding: 10px;
+            padding: 20px;
             text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #333;
         }
         nav {
             background-color: #333;
@@ -44,25 +55,29 @@ if (isset($_SESSION['nueva_compra'])) {
         nav a {
             color: #fff;
             text-decoration: none;
-            margin-right: 20px;
+            margin: 0 15px;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            text-decoration: underline;
         }
         .contacto-container {
             max-width: 600px;
-            margin: 20px auto;
+            margin: 50px auto;
             padding: 20px;
-            background-color: #f7f7f7;
+            background-color: rgba(255, 255, 255, 0.8);
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .contacto-container h2 {
             text-align: center;
             margin-bottom: 20px;
+            font-size: 1.8em;
         }
         .contacto-form label,
         .contacto-form textarea,
         .contacto-form input[type="email"],
-        .contacto-form input[type="text"],
-        .contacto-form input[type="file"] {
+        .contacto-form input[type="text"] {
             display: block;
             width: 100%;
             margin-bottom: 10px;
@@ -81,12 +96,38 @@ if (isset($_SESSION['nueva_compra'])) {
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            transition: background-color 0.3s ease;
+            display: block;
+            margin: 0 auto;
+        }
+        .contacto-form button:hover {
+            background-color: #e0b300;
         }
         footer {
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 10px;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        @media (max-width: 768px) {
+            .contacto-container {
+                margin: 20px;
+                padding: 20px;
+            }
+            header h1 {
+                font-size: 2em;
+            }
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
         }
     </style>
 </head>
@@ -113,14 +154,13 @@ if (isset($_SESSION['nueva_compra'])) {
             <input type="text" id="asunto" name="asunto" value="Reporte de ventas" readonly disabled>
 
             <label for="mensaje">Mensaje:</label>
-          
-            <textarea id="mensaje" name="mensaje_reporte" rows="4" required><?php echo isset($_SESSION['reporte_ventas']) ? $_SESSION['reporte_ventas'] : ''; ?> </textarea>
+            <textarea id="mensaje" name="mensaje_reporte" rows="4" required><?php echo isset($_SESSION['reporte_ventas']) ? $_SESSION['reporte_ventas'] : ''; ?></textarea>
 
             <button type="submit" name="enviar_mensaje">Enviar Mensaje</button>
         </form>
     </div>
     <footer>
-    <p>&copy; 2024 Paletería Don Jose | Dirección: Ayutla #5637, Guadalajara Jalisco Mexico | Teléfono: (332) 914 5027 </p>
+        <p>&copy; 2024 Paletería Don Jose | Dirección: Ayutla #5637, Guadalajara Jalisco Mexico | Teléfono: (332) 914 5027</p>
     </footer>
 </body>
 </html>

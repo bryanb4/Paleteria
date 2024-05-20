@@ -28,12 +28,22 @@ $resultado = $conexion->query($sql);
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f7f7f7;
+            background-image: url('../images/bg7.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #333;
         }
         header {
             background-color: #ffcc00;
-            padding: 10px;
+            padding: 20px;
             text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #333;
         }
         nav {
             background-color: #333;
@@ -44,7 +54,11 @@ $resultado = $conexion->query($sql);
         nav a {
             color: #fff;
             text-decoration: none;
-            margin-right: 20px;
+            margin: 0 15px;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            text-decoration: underline;
         }
         .catalogo-container {
             max-width: 1200px;
@@ -55,7 +69,7 @@ $resultado = $conexion->query($sql);
             gap: 20px;
         }
         .producto {
-            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0.8);
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             padding: 20px;
@@ -76,7 +90,7 @@ $resultado = $conexion->query($sql);
             max-width: 1200px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0.8);
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -106,10 +120,30 @@ $resultado = $conexion->query($sql);
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 10px;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        }
+        footer p {
+            margin: 5px 0;
         }
         .centrar-botones {
             text-align: center;
+        }
+        @media (max-width: 768px) {
+            .catalogo-container {
+                margin: 20px;
+                padding: 20px;
+            }
+            header h1 {
+                font-size: 2em;
+            }
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
         }
     </style>
 </head>
@@ -121,7 +155,7 @@ $resultado = $conexion->query($sql);
         <a href="bienvenida.php">Inicio</a>
         <a href="catalogo.php">Catálogo</a>
         <a href="contacto.php">Reporte</a>
-        <a href="cerrar_sesion.php">Cerrar sesion</a>
+        <a href="cerrar_sesion.php">Cerrar sesión</a>
     </nav>
     <div id="catalogo" class="catalogo-container">
         <?php
@@ -195,7 +229,7 @@ $resultado = $conexion->query($sql);
     </script>
     
     <footer>
-    <p>&copy; 2024 Paletería Don Jose | Dirección: Ayutla #5637, Guadalajara Jalisco Mexico | Teléfono: (332) 914 5027 </p>
+        <p>&copy; 2024 Paletería Don Jose | Dirección: Ayutla #5637, Guadalajara Jalisco Mexico | Teléfono: (332) 914 5027</p>
     </footer>
 </body>
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,22 +18,40 @@
             flex-direction: column;
             min-height: 100vh;
         }
+
         header {
             background-color: #ffcc00;
-            padding: 10px;
+            padding: 30px;
             text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #333;
+        }
+
         nav {
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 10px;
+            padding: 20px;
         }
+
         nav a {
             color: #fff;
             text-decoration: none;
-            margin-right: 20px;
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
         }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: #ffcc00;
+        }
+
         .container {
             max-width: 800px;
             margin: auto;
@@ -42,16 +61,20 @@
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             flex-grow: 1;
         }
+
         .formulario__registro {
             display: flex;
             flex-direction: column;
         }
+
         .input-group {
             margin-bottom: 15px;
         }
+
         label {
             font-weight: bold;
         }
+
         input[type="text"],
         input[type="password"] {
             width: 100%;
@@ -60,6 +83,7 @@
             border-radius: 3px;
             box-sizing: border-box;
         }
+
         select {
             width: 100%;
             padding: 8px;
@@ -68,6 +92,7 @@
             box-sizing: border-box;
             margin-bottom: 15px;
         }
+
         button {
             padding: 10px;
             background-color: #ff6f00;
@@ -77,18 +102,22 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
+
         button:hover {
             background-color: #e65100;
         }
+
         .btn__regresar {
             text-align: center;
             margin-top: 10px;
         }
+
         .btn__regresar a {
             color: #333;
             text-decoration: none;
             font-size: 14px;
         }
+
         footer {
             background-color: #333;
             color: #fff;
@@ -98,22 +127,23 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1>Paletería Don Jose</h1>
     </header>
     <nav>
-    <a href="inicio_admin.php">Inicio</a>
-        <a href="gestion_productos.php">Gestión de Productos</a>
-        <a href="gestion_pedidos.php">Gestión de Pedidos</a>
-        <a href="productos.php">Visualizar Productos</a>
-        <a href="ver_pedidos.php">Visualizar Pedidos</a>
+        <a href="inicio_admin.php">Inicio</a>
+        <a href="gestion_productos.php">Gestión Productos</a>
+        <a href="gestion_pedidos.php">Gestión Pedidos</a>
+        <a href="productos.php">Ver Productos</a>
+        <a href="ver_pedidos.php">Ver Pedidos</a>
         <a href="registrar_empleado.php">Registrar Empleado</a> <!-- Nueva opción de registrar empleado -->
-        <a href="ver_mensajes.php">Ver los mensajes</a>
+        <a href="ver_mensajes.php">Ver mensajes</a>
         <a href="cerrar_sesion.php">Cerrar Sesión</a>
     </nav>
     <div class="container">
-        <form action="registro_empleado.php" method="POST" class="formulario__registro">
+        <form action="registro_usuario.php" method="POST" class="formulario__registro">
             <h2 style="text-align: center;">Registrar un empleado</h2>
             <div class="input-group">
                 <label for="nombre_completo">Nombre completo:</label>
@@ -145,7 +175,8 @@
         </form>
     </div>
     <footer>
-    <p>&copy; 2024 Paletería Don Jose | Dirección: Ayutla #5637, Guadalajara Jalisco Mexico | Teléfono: (332) 914 5027 </p>
+        <p>&copy; 2024 Paletería Don Jose | Dirección: Ayutla #5637, Guadalajara Jalisco Mexico | Teléfono: (332) 914 5027 </p>
     </footer>
 </body>
+
 </html>
